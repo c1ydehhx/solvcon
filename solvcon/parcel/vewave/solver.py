@@ -118,6 +118,7 @@ class VewaveSolver(solver.MeshSolver):
         self.stm = np.empty((ngstcell+ncell, neq), dtype=fpdtype)
         self.cfl = np.empty(ngstcell+ncell, dtype=fpdtype)
         self.ocfl = np.empty(ngstcell+ncell, dtype=fpdtype)
+        from solvcon.parcel.vewave import _algorithm
         alg = _algorithm.VewaveAlgorithm()
         alg.setup_mesh(blk)
         alg.setup_algorithm(self)

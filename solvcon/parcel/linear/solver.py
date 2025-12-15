@@ -144,6 +144,7 @@ class LinearSolver(solver.MeshSolver):
 
         >>> alg = svr.create_alg()
         """
+        from solvcon.parcel.linear import _algorithm
         alg = _algorithm.LinearAlgorithm()
         alg.setup_mesh(self.blk)
         alg.setup_algorithm(self)
