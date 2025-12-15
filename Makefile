@@ -94,6 +94,7 @@ clean_legacy:
 dist/${PKGNAME}.tar.gz: Makefile
 	rm -rf dist/SOLVCON-${SCVER}* ; \
 	${PYTHON} setup.py clean ; \
+	${PYTHON} setup.py build_ext --inplace ; \
 	${PYTHON} setup.py sdist
 
 .PHONY: package
