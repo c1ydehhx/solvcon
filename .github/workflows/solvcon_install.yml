@@ -1,8 +1,10 @@
 # Build SOLVCON with Conda
 name: solvcon_install
 
-on:
+on: 
   push:
+    branches:
+      - lagecy-ci
 
 jobs:
   build:
