@@ -3,8 +3,7 @@ name: solvcon_install
 
 on: 
   push:
-    branches:
-      - lagecy-ci
+  pull_request:
 
 jobs:
   build:
