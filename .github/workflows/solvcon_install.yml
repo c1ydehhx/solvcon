@@ -3,9 +3,6 @@ name: solvcon_install
 
 on:
   push:
-  pull_request:
-  schedule:
-    - cron: '21 17 * * *'
 
 jobs:
   build:
